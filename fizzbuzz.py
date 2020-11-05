@@ -6,18 +6,22 @@ class Fizzbuzz:
         self.arg2 = arg2
 
     def fizzbuzz_method(self):
-        for i in range(100):
-            if i % self.arg1 == 0 and i % self.arg2 == 0:
-                return("FizzBuzz")
-            elif i % self.arg1 == 0:
-                return("Fizz")
-            elif i % self.arg2 == 0:
-                return("Buzz")
+        arg1 = int(input("What number would you like to assign to Fizz? "))
+        arg2 = int(input("What number would you like to assign to Buzz? "))
+
+        for i in range(101):
+
+            if i % arg1 == 0 and i % arg2 == 0:
+                print("FizzBuzz")
+            elif i % arg1 == 0:
+                print("Fizz")
+            elif i % arg2 == 0:
+                print("Buzz")
             else:
-                return(i)
+                print(i)
             i += 1
 
 
-test = Fizzbuzz(3, 5)
+test_1 = Fizzbuzz(3, 5)
 
-print(test.fizzbuzz_method())
+print(test_1.fizzbuzz_method())
