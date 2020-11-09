@@ -1,12 +1,13 @@
 # FizzBuzz Class
 
 class FizzBuzz:
-    def __init__(self, arg1, arg2):
-        self.fizz = arg1
-        self.buzz = arg2
+    def __init__(self):
+        # Asks the user to input numbers to represent Fizz and Buzz
+        self.fizz = int(input("What number would you like to be 'Fizz'?\n=> "))
+        self.buzz = int(input("What number would you like to be 'Buzz'?\n=> "))
 
-    #
     def fizzbuzz_calculation(self):
+        print("OUTPUT\n -> ")
         # Makes sure the range is 1-100 as specified
         for i in range(1, 101):
         # Relevant control flow rules which apply for the numbers in the game
@@ -24,12 +25,8 @@ class FizzBuzz:
 
 # The main function
 def main():
-    # Asks the user to input numbers to represent Fizz and Buzz
-    fizz = int(input("What number would you like to be 'Fizz'?\n=> "))
-    buzz = int(input("What number would you like to be 'Buzz'?\n=> "))
-
     # Testing the functionality by assigning object to class
-    test = FizzBuzz(fizz, buzz)
+    test = FizzBuzz()
 
     # Prints the numbers from 1-100 with FizzBuzz where relevant
     print(test.fizzbuzz_calculation())
