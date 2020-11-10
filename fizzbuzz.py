@@ -5,6 +5,7 @@ class FizzBuzz:
         # Asks the user to input numbers to represent Fizz and Buzz
         self.fizz = int(input("What number would you like to be 'Fizz'?\n=> "))
         self.buzz = int(input("What number would you like to be 'Buzz'?\n=> "))
+        self.fizzbuzz_calculation()
 
     def fizzbuzz_calculation(self):
         print("OUTPUT\n -> ")
@@ -20,7 +21,7 @@ class FizzBuzz:
             else:
                 print(i)
             # Iterate over the process again and again till number 100
-            i += 1
+
 
 
 # The main function
@@ -29,7 +30,7 @@ def main():
     test = FizzBuzz()
 
     # Prints the numbers from 1-100 with FizzBuzz where relevant
-    print(test.fizzbuzz_calculation())
+
 
 
 # Used to make sure the code is run from the main file
